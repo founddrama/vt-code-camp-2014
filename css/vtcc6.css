@@ -1,0 +1,26 @@
+.title-slide h1 {
+	text-align: left;
+	margin-right: 2em;
+}
+.title-slide h3,
+.title-slide p {
+	color: #002b36;
+}
+.title-slide h3 {
+	text-align: right;
+	margin-left: 4em;
+}
+.title-slide p {
+	background-color: rgba(238, 232, 213, 0.6);
+}
+.title-slide a {
+	text-decoration: underline !important;
+}
+.bananas blockquote {
+	background-color: rgba(0, 43, 54, 0.6);
+	color: rgba(238, 232, 213, 0.9);
+}
+.bananas p {
+	position: relative;
+	top: 200px;
+}

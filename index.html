@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tales from the Scrum Bowl - Servant-Leadership in the Dual Role of Scrum Master and Developer</title>
+
+    <meta name="description" content="What's it like to be a developer on a team *and* to serve as its Scrum Master? For many organizations, Scrum and Scaled Agile Framework are great strategies to help developers adapt to changing environments and focus on delive> ring valuable results. The Scrum Master’s role is to play servant-leader for the team; to help them get answers, or get unblocked, and to be accountable to themselves so that they can be accountable to the business. But what does it mean to wear both the developer and Scrum Master hats? Does being a Scrum Master take away from the development role? Which role takes priority? Do the roles compliment each other? And what can we learn from each experience? This talk focuses on doing just that — playing both roles, what it means for the team, for the business, and your career.">
+    <meta name="author" content="Rob Friesel">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" type="text/css" href="css/vtcc6.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background="images/Fish-Jump-2048x2560.jpg" data-background-position="top center" data-state="title-slide">
+          <h1>Tales from the Scrum Bowl</h1>
+          <h3>Servant-Leadership in the Dual Role of ScrumMaster and Developer</h3>
+          <p>
+            An anecdote by <a href="http://blog.founddrama.net">Rob Friesel</a><br/><a href="https://twitter.com/founddrama">@founddrama</a>
+          </p>
+        </section>
+
+        <section>
+          <h1>Who am I?</h1>
+        </section>
+
+        <section>
+          <h2>Rob Friesel</h2>
+          <ul>
+            <li><a href="http://blog.founddrama.net/">blog.founddrama.net</a></li>
+            <li><a href="https://twitter.com/founddrama">@founddrama</a></li>
+            <li>author of <a href="http://goo.gl/NJnFq1"><em>PhantomJS Cookbook</em></a></li>
+            <li>11 year veteran at <a href="http://www.dealer.com/">Dealer.com</a></li>
+            <li>certified ScrumMaster</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * played a bunch of diff roles at DDC over the years
+            * currently Sr. UI Developer
+          </aside>
+        </section>
+
+        <section>
+          <h1>What is Agile?</h1>
+        </section>
+        <section data-background="images/manifesto.png">
+          <aside class="notes" data-markdown>
+            * originates 2001; Kent Beck, Bob Martin, Martin Fowler
+            * ...Jeff Sutherland
+            * emphasize: value on the left *over* the right
+              * (the right still has value, but isn't *as* valuable)
+          </aside>
+        </section>
+        <section>
+          <h2>The many flavors...</h2>
+          <ul>
+            <li>Scrum</li>
+            <li>Kanban</li>
+            <li>Lean</li>
+          </ul>
+          <aside class="notes" data-markdown>
+            * and others
+              * variations on these
+              * "covariates" (e.g., XP + Scrum)
+            * "just another way of doing business"
+              * j/k (sort of)
+          </aside>
+        </section>
+
+        <section>
+          <h1>Agile at Dealer.com</h1>
+          <aside class="notes" data-markdown>
+            * tell the story of Agile at DDC
+            * a little of what "They" told us
+            * and what it's been like "on the ground"
+            ----
+            * after dabbling w/ "Agile" on a small scale for a couple years...
+            * ...co. decides to go all-in
+            * w/ Scrum
+          </aside>
+        </section>
+        <section data-background="images/scrum-overview.jpg">
+          <aside class="notes" data-markdown>
+            * and/but/so Scrum works OK w/ small teams
+            * but... what about something at enterprise scale?
+          </aside>
+        </section>
+        <section data-background="images/SAFe.png">
+          <aside class="notes" data-markdown>
+            * Scaled Agile Framework (SAFe)
+            * (look scary?)
+            * we'll just be focusing on the bottom row
+              * which anyway is basically just scrum
+              * but inside of this larger machine
+          </aside>
+        </section>
+        <section>
+          <h1>Why adopt Scrum?</h1>
+        </section>
+        <section>
+          <h2>focus on learning</h2>
+          <aside class="notes" data-markdown>
+            * about ourselves
+            * about our customers
+            * about our products
+          </aside>
+        </section>
+        <section>
+          <h2>focus on adapting</h2>
+          <aside class="notes" data-markdown>
+            * (adapt != thrash)
+            * adapting == learning
+            * adapting == improving
+          </aside>
+        </section>
+        <section>
+          <h2>focus on delivering value</h2>
+          <aside class="notes" data-markdown>
+            * take that learning & adapting...
+            * ...and make better stuff
+            ----
+            * b/c isn't that what everyone wants?
+              * "the business" & devs alike?
+            * and isn't that why co.s _really_ adopt scrum?
+              * to learn
+              * to get a better cadence
+              * ultimately: to be more profitable?
+          </aside>
+        </section>
+
+        <section>
+          <h1>What the &#x261E;&#x272F;&#x262D;&#x2602; is a ScrumMaster?</h1>
+        </section>
+        <section>
+          <h2>Team Member</h2>
+          <h3>(<u>not</u> a project manager)</h3>
+          <aside class="notes" data-markdown>
+            * NOT a project manager
+            * embedded member of the team
+            * this is The Scrum Way
+            * and an important tenet of Scrum
+          </aside>
+        </section>
+        <section>
+          <h2>Facilitate Scrum</h2>
+          <aside class="notes" data-markdown>
+            * that's the SM's MAIN MISSION
+            * "That means..."
+              * promote the principle of "self-organization"
+              * facilitate the scrum ceremonies
+                (stand-up, retro, sprint review, sprint planning, &c.)
+              * UNBLOCK! (remove impediments)
+              * _retro retro retro_ 
+                (help the team to self-discover & improve)
+          </aside>
+        </section>
+        <section>
+          <h2>Servant-Leadership</h2>
+          <aside class="notes" data-markdown>
+            * ...and the point of facilitating scrum?
+            * to help guide the team through sprints
+            * a little bit coach, a little bit role model
+          </aside>
+        </section>
+
+        <section>
+          <h1>Why be a ScrumMaster?</h1>
+          <h3>(...when you're already a developer?)</h3>
+          <aside class="notes" data-markdown>
+            * TELL YOUR STORY
+            * started when Sean left
+              * ("Who is Sean?")
+              * for another team
+            * CHANGE! crisis? or opportunity?
+              1. seemed a good way to represent the team
+                 (after all, these are guys I've worked with for years now)
+              2. recent projects had left me feeling...
+                 - unfulfilled?
+                 - under-utilized?
+          </aside>
+        </section>
+        <section>
+          <img src="images/story-card.jpg" />
+          <!-- <h1>Go For It</h1> -->
+        </section>
+        <section>
+          <h3>EXPECTATION:</h3>
+          <h2>"It's like maybe two hours per day."</h2>
+        </section>
+        <section>
+          <h3>REALITY:</h3>
+          <h2>Not at first.</h2>
+          <aside class="notes" data-markdown>
+            * knew there'd be some transition
+            * wasn't prepared for the initial perspective shift required
+            * granted, it's not _necessarily_ a full-time thing
+            * but there's an (initial) investment to be made
+          </aside>
+        </section>
+        <section>
+          <h3>EXPECTATION:</h3>
+          <h2>"Mornings for Scrum, afternoons for Dev."</h2>
+        </section>
+        <section>
+          <h3>REALITY:</h3>
+          <h2>Maybe on a good day.</h2>
+          <aside class="notes" data-markdown>
+            * b/c that's how I naïvely thought this would be
+              * in the morning: do the stand-up, sum the board, unblock everyone and... done
+              * in the afternoon: head down on dev task
+            * reality was that being a successful SM meant allowing for interruptions
+            * b/c the team comes first
+              * and the only way to ensure that THEY maintain perspective
+              * is if you can allow them to focus & flow
+            * and/but/so *as* a member of the team
+              * (who is also a developer at heart)
+              * I want in on that flow too
+              * after all: I got into this game to build cool stuff too
+            * AND/BUT/SO on a good day that *was* the rhythm
+              * some days it was unavoidable
+              * (esp. around sprint boundaries)
+              * but that was certainly what I strove for
+          </aside>
+        </section>
+        <section>
+          <h3>EXPECTATION:</h3>
+          <h2>There will be friction between two roles.</h2>
+        </section>
+        <section>
+          <h3>REALITY:</h3>
+          <h2>Some, but mostly in the beginning.</h2>
+          <aside class="notes" data-markdown>
+            * not something I thought of at first
+            * question raised by our out-going SM
+            * one that I did not anticipate
+            * and/but there was definitely that friction
+              * esp. when there was work I wanted to do...
+              * ...but knowing that the SM work needed to come first
+            * b/c being entrenched in it: you start to see how valuable the SM work is
+              * e.g., going to another team and explaining how your team is blocked
+              * e.g., meeting a critical deadline by running interference on escalations
+                (or else handling it yourself)
+          </aside>
+        </section>
+
+        <section>
+          <h1>An aside...</h1>
+        </section>
+        <section data-background="images/apples-bananas.png" data-state="bananas">
+          <blockquote>
+            It’s the equivalent of spending years counting the number of apples you picked each day, and changing to a job picking bananas, only to say to yourself at the end of each day, "I didn't pick any apples," handily ignoring the giant pile of bananas sitting next to you.
+          </blockquote>
+          <p>-- Fitzpatrick &amp; Sussman, <em>Team Geek</em> (2012)</p>
+        </section>
+
+        <section>
+          <h1>What good did it do?</h1>
+        </section>
+        <section>
+          <h3>BUSINESS:</h3>
+          <h2>Elevated ScrumMastering</h2>
+          <aside class="notes" data-markdown>
+            * this one from Ross
+            * esp. at beginning of Agile at DDC...
+            * ...almost every SM was a former TPM
+            * and whereas a TPM could manage multiple projects
+              (and thus across multiple teams)
+            * being a SM is more intense (b/c you're embedded in the team)
+            * so by taking that bold 1st step: demonstrated to more teams that it could be done
+            * ...to take SM'ing seriously
+            * ...and that you (yes, YOU) Mr. or Ms. Developer, could do it
+            * (i.e., more _capable_ SMs)
+            * EXAMPLE: at least 5 other technical people became SMs
+          </aside>
+        </section>
+        <section>
+          <h3>BUSINESS:</h3>
+          <h2>Lose Less in Translation</h2>
+          <aside class="notes" data-markdown>
+            * "Don't get me wrong..."
+            * TPMs have made careers of doing _exactly this_
+              & I've got the utmost respect for what they do
+            * and/but/so: in some fast-paced situations, having the SM _be_ technical is an advantage
+              * e.g., you already have the code checked out
+              * and/or you have the trust of the team
+              * ...and so when you are over with another team trying to unblock
+              * ...you can just make a call about what to do
+                (b/c you have some technical insight and you have the team's trust)
+            * EXAMPLE: somewhat frequently, we would escalate to SE
+              and I'd be able to _just tell them what they needed_
+          </aside>
+        </section>
+        <section>
+          <h3>TEAM:</h3>
+          <h2>Has a Trusted Advocate</h2>
+          <aside class="notes" data-markdown>
+            * 2 slides ago I was defending TPMs
+            * but let's admit it:
+              * even on the most healthy teams there's some friction b/w devs + PMs
+            * DDC did away w/ (T)PMs in favor of SMs when we "went Agile"
+            * but SM still fills a lot of the roles that TPMs historically did
+              * like creating the "artifacts"
+              * like coordinating w/ other teams ("unblocking")
+              * like being the one that gets called into this or that meeting
+            * and/but/so there's that historical friction w/ even the best TPM
+              * but when your SM is also a dev, it's a different relationship
+                (b/w the SM and the team)
+            * EXAMPLE: when representing them at meetings...
+              * ...they know that I'm able to (say...) defend the estimates
+          </aside>
+        </section>
+        <section>
+          <h3>TEAM:</h3>
+          <h2>Learning Leadership</h2>
+          <aside class="notes" data-markdown>
+            * so many leaders...
+              * Managers & Directors...
+              * Tech Leads & Architects
+              * Product Owners
+              * &c.
+            * but SM is a leader for _learning_
+            * SM is there not to push the team
+              * ...but to coach the team into high-performance
+            * you get to high-performance by...
+              * trying and failing
+              * failing and learning
+            * EXAMPLE: estimates!
+              * something we learned pretty early on in our Agile journey
+              * beginning: fine-grained tasks - "That should cover everything!"
+              * except: it never does (something is always missed)
+              * TO THE RETRO! part over-thinking; part sand-bagging?
+              * try it: _resist_ the urge to spell it out
+                * use higher-level tasks
+                * seemingly larger estimates
+              * ...but we wound up closer, and our velocity improved
+          </aside>
+        </section>
+        <section>
+          <h3>PERSONALLY:</h3>
+          <h2>Top-Down for the Big Picture</h2>
+          <aside class="notes" data-markdown>
+            * "to go way back"
+              * time as Support Manager
+              * time as Production Manager
+              * big picture was thrust upon me
+              * and/but - didn't feel ready for the responsibilities?
+            * as a dev = wind up task focused
+              * and/or project focused
+              * and/or story focused
+              * the point = not thinking at the level of "the business"
+            * SM role gave me a lot more exposure to other teams
+              * what they needed from us
+              * and vice versa
+            * EXAMPLE: this became an every day thing
+              * we would do stand up
+              * I would tally hours
+              * I would tally escalations
+              * I would go try to unblock
+              * ...and be the one field questions about "Can you unblock us...?"
+              * started to look at the business in a more holistic way
+          </aside>
+        </section>
+        <section>
+          <h3>PERSONALLY:</h3>
+          <h2>More Confidence</h2>
+          <aside class="notes" data-markdown>
+            * came directly out of looking at the business holistically
+            * when I had a chance to do dev work
+              * ...I felt more confident that I was working on THE RIGHT THINGS
+            * felt MORE AWARE of priorities
+            * had an EASIER TIME of separating the important from the urgent
+            * _started_ to master "The Art of the Positive No"
+              * (I'm still not _great_ at this, but I've gotten pretty good)
+              * e.g., listening, ack'ing, and explaining Why-Nots and Alternatives
+            * _some of that_ comes from the VISIBILITY that is one of the central tenets of Scrum
+              * SEEING the backlog on the wall every day
+              * SEEING the stories we're actively working on
+              * KNOWING that anyone else can come down and see the stories &c.
+          </aside>
+        </section>
+
+        <section>
+          <h1>Where does the story end?</h1>
+          <aside class="notes" data-markdown>
+            * SPOILER ALERT: after about 9 months...
+              ...I got out of the SM game
+              * got out of it what I wanted
+              * felt it was time to return my focus to dev
+            * but: good career move
+              * new perspective on the business
+                * but it's that... "meta-learning"
+                * about how to relate _to_ the business
+                  (and what it needs)
+              * a good _kind_ of leadership role to have
+          </aside>
+        </section>
+
+        <section>
+          <h1>Thanks</h1>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme,
+        transition: Reveal.getQueryHash().transition || 'default',
+
+        dependencies: [
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
